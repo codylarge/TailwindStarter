@@ -1,18 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS Starter Kit</title>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="bg-cover bg-center h-screen" style="background-image: url('../img/ClassroomNoClock.png')";>
+        <time class="relative bg-black p-4 rounded-lg text-lime-500 text-6xl">
+            <data class="hours">HH</data>
+            <span class="mx-1">:</span>
+            <data class="minutes">MM</data>
+            <span class="mx-1">:</span>
+            <data class="seconds">SS</data>
+            <data class="amOrPM ml-1">AM/PM</data>
+        </time>
 
-    <link rel="stylesheet" href="style.css">
+        <div class="flex items-center justify-center font-chalk">
+            <time class="relative text-center font-chalk">
+                <data class="text-white month inline text-center text-6xl">Month</data>
+                <span class="text-6xl">&nbsp;</span>
+                <data class="text-white dayOfMonth inline text-center text-6xl">00</data>
+                <spans class="text-white dayOfMonth inline text-center text-6xl">, </span>
+                <data class="text-white year inline text-center text-6xl">0000</data>
+                <data class="text-white dayOfWeek block text-center text-6xl">SMTWTFS</data>
+            </time>
+        </div>
 
-    <script src="script.js" defer></script>
-
-</head>
-<body>
-
-    <h1>Starter kit for Tailwind CSS.</h1>
-    
-</body>
+        <script src="script.js"></script>
+    </body>  
 </html>
