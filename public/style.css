@@ -600,6 +600,10 @@ video {
   text-align: center;
 }
 
+.font-chalk {
+  font-family: Gochi Hand, cursive;
+}
+
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;

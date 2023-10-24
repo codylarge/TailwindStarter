@@ -2,8 +2,11 @@
 module.exports = {
   content: ["./public/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        chalk: ["Gochi Hand", "cursive"],
+      },
+    },
+    plugins: [],
   },
-  plugins: [],
-}
-
+};
